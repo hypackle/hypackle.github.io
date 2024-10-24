@@ -1,0 +1,273 @@
+/*Main CSS*/
+
+.title {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.cookies-alert {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  z-index: 999997;
+  width: 357px;
+  height: 191px;
+  text-align: left;
+}
+
+.cookies-alert p {
+  margin-bottom: 15px;
+}
+
+.cookies-alert button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 9px 153px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -4px;
+  margin-bottom: 0;
+}
+
+.button-container {
+  margin: 0 -3px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: px;
+}
+
+.content h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.iframe-container iframe {
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.wave {
+  bottom: 0%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  margin-bottom: -0.2%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url("../img/bg.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+/*Discord Button*/
+
+.bn39 {
+  background-image: linear-gradient(135deg, #008aff, #86d472);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 150px;
+  z-index: 2;
+}
+
+.bn39:hover {
+  color: #fff;
+}
+
+.bn39 .bn39span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn39:hover .bn39span {
+  background: transparent;
+}
+
+
+/*Patch Notes text*/
+
+.txt49 {
+  color: #0051ff;
+  text-decoration: none;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+  font-weight: 536;
+}
+
+.p29 {
+  color: white;
+  font-size: 17px
+}
+
+
+
+/* Add your custom styles here if needed */
+
+.logo {
+  display: inline-block;
+  /* Ensure logo and buttons appear on the same line */
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+  /* Align buttons to the right */
+}
+
+.menu-item {
+  margin-left: 10px;
+  /* Add margin between buttons */
+}
+
+@font-face {
+  font-family: blox2;
+  src: URL('/assets/fonts/Blox2.ttf') format('truetype');
+  /* src: URL('/assets/fonts/nano.ttf') format('truetype'); */
+  /* src: URL('/assets/fonts/TESLA.ttf') format('truetype'); */
+}
+
+@font-face {
+ font-family: rocksalt;
+ src: URL('/assets/fonts/RockSalt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: tesla;
+  src: URL('/assets/fonts/TESLA.ttf') format('truetype');
+  /* src: URL('/assets/fonts/nano.ttf') format('truetype'); */
+  /* src: URL('/assets/fonts/TESLA.ttf') format('truetype'); */
+}
+
+@font-face {
+  font-family: atami;
+  src: URL('/assets/fonts/Atami-Display.otf') format('truetype');
+  /* src: URL('/assets/fonts/nano.ttf') format('truetype'); */
+  /* src: URL('/assets/fonts/TESLA.ttf') format('truetype'); */
+}
+
+@media only screen and (min-width: 1200px) {
+  #title {
+    font-family: atami;
+    /* font-family: blox2; */
+    /* font-size: 7rem !important;
+    font-stretch: ultra-expanded;
+    display: inline-block;
+    transform: scale(1.5, 1); */
+    /* Adjust the scaling factor as needed */
+    /* transform-origin: center; */
+    /* Center the transformation origin */
+    /* text-align: center !important; */
+    font-size: 5rem !important;
+    font-stretch: 200%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  #title {
+    font-family: atami;
+    font-size: 5rem !important;
+    font-stretch: 200%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #title {
+    font-family: tesla;
+    font-size: 3.5rem !important;
+    font-stretch: 200%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #title {
+    font-family: tesla;
+    font-size: 7rem !important;
+    font-stretch: 200%;
+  }
+}
+
+/* #title {
+  font-family: boeing;
+  font-size: 7rem !important;
+  font-stretch: 200%;
+} */
+
+
+#iframe {
+  position: absolute;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 150vh;
+  z-index: -50000;
+  left: no-repeat;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  font-stretch: ultra-expanded;
+}
+
+
+#iframe-container {
+  position: relative;
+  bottom: 100vh;
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+}
+
+/* #iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
+
+#dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Adjust opacity as needed */
+  z-index: -1;
+}

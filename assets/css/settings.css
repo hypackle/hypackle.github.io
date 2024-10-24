@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url("./dist/tooltip.css");
+@import url("./dist/cards.css");
+@import url("./dist/switches.css");
+@import url("./dist/keys.css");
+
+a {
+  color: var(--creative-blue);
+  text-decoration: none;
+}
+
+
+:root {
+  font-family: var(--font-family);
+  --font-family: "Roboto", "Inter", "Source Sans Pro", "Lato", "Open Sans", Arial, Helvetica, sans-serif;
+  --font-family-2: "Lato", "Open Sans", "Roboto", "Inter", "Source Sans Pro", Arial, Helvetica, sans-serif;
+  --font-family-3: "Source Sans Pro", "Roboto", "Inter", "Lato", "Open Sans", Arial, Helvetica, sans-serif;
+  --creative-blue: #4287f5;
+  --light-blue: #6499ff;
+  --name: content: "nate-games";
+  --logo: content: url("/favicon.ico");
+}
+
+input.nice-input {
+  padding: 10px;
+  background: #222;
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  font-size: 13px;
+  color: rgb(247, 248, 248);
+  appearance: none;
+  transition: border 0.15s ease 0s;
+}
+
+input.nice-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--light-blue);
+}
+
+select {
+  padding: 10px 5px;
+  font-size: 11px;
+  font-weight: lighter;
+  border-radius: 5px;
+  background: #171717;
+  font-family: var(--font-family);
+  color: #fff;
+  border: 0;
+}
+
+/* Checkbox Start */
+/* Copyright DaniloMGutavo on uiverse */
+/* https://uiverse.io/DaniloMGutavo/stupid-mouse-85 */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox:checked~.checkmark {
+  background-color: #2196F3;
+  box-shadow: 0 3px 7px rgba(33, 150, 243, 0.3);
+}
+
+.custom-checkbox:checked~.checkmark:after {
+  display: block;
+}
+
+@keyframes checkAnim {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 10px;
+  }
+}
+
+.custom-checkbox:checked~.checkmark:after {
+  animation: checkAnim 0.2s forwards;
+}
+
+/* Checkbox End */
+
+select option,
+.select2 {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}

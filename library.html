@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="manifest" href="/appmanifest.json">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="assetsnew/css/gms.css">
+  <link rel="stylesheet" href="assetsnew/css/style.css">
+  <link rel="stylesheet" href="assetsnew/css/tab_browser.css">
+  <link rel="stylesheet" href="assetsnew/css/recentplays.css">
+  <link rel="stylesheet" href="/assets/css/particles/2000/style.css">
+
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Hypackel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body style="overflow-x: hidden;z-index: inherit !important;height: 100%; margin: 0;
+padding: 0;background-color: #141414 !important;color: #fff !important;">
+
+  </div>
+  <div style="background-color: transparent !important;" id="fixed-nav-bar" class="fixed-nav-bar">
+    <div class="fixed-nav-bar-container ">
+      <a class="icon" style="word-wrap:initial" href="/./">
+        <img alt="nav" id="HYimg" src="/assets/img/app.png">
+      </a>
+    </div>
+    <div style="color: inherit;" class="fixed-nav-bar-right">
+      <a class="navbar-link" href="/games.html">
+        <i class="fa-solid fa-gamepad navbar-icon"></i>Games </a>
+    </div>
+  </div>
+  <header class="header">
+    <nav data-bs-theme="dark" style="display: block;" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div data-bs-theme="dark" class="container-fluid">
+        <a class="navbar-brand" href="#">Hypackel</a>
+        <button data-bs-theme="dark" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/games.html">Games</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main style="z-index: 3 !important;color: #fff; margin-top: 15vh;" class="manicontent">
+
+
+    <center>
+      <div style="max-width: 80vw;" class="slidereeddwefsa">
+
+        <!-- Second Row for Recent Plays -->
+        <section class="relative flex flex-col gap-2 w-full h-full">
+          <div style="display: flex; align-items: center;">
+            <h2 id="recentplaystext" class="font-bold text-xl" style="margin-right: auto;">Jump Back In</h2>
+            <div id="polli">
+              <button id="ClearRecentPlays" onclick="confirmClearRecentPlays()" class="link-danger">Clear Recent
+                Plays</button>
+            </div>
+            <script>
+
+            </script>
+          </div>
+
+          <div class="relative overflow-hidden w-full rounded-lg">
+            <!-- Buttons for prev/next controls -->
+            <button style="border-radius: 0;"
+              class="prev-button hidden transition ease-linear absolute z-[1] left-0 w-20 h-full px-4 bg-gradient-to-r from-black to-transparent flex items-center justify-start">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                class="w-6 h-6 relative">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75">
+                </path>
+              </svg>
+            </button>
+            <button style="border-radius: 0;"
+              class="next-button block transition ease-linear absolute z-[1] right-0 w-20 h-full px-4 bg-gradient-to-l from-black to-transparent flex items-center justify-end">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                class="w-6 h-6 relative">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75 6.75M19.5 12l-6.75-6.75">
+                </path>
+              </svg>
+            </button>
+
+            <!-- Recent Plays container -->
+            <div
+              class="relative flex flex-row justify-start items-center gap-2 h-fit overflow-x-scroll [&amp;::-webkit-scrollbar]:hidden"
+              id="recentPlaysContainer"></div>
+          </div>
+        </section>
+
+      </div>
+    <br><br><br>
+</center>
+    <div id="spacerOfRecentPlays">
+      <br><br><br>
+    </div>
+
+    
+    <div class="text-center align-center justify-center d-flex flex-column">
+      <h4>Games: <span id="objectCount"></span></h4>
+      <br>
+      <div class="text-center d-flex justify-center game-search">
+        <input type="text" class="searchforapps" id="searchInput" placeholder="Search for games or tags...">
+      </div>
+    </div>
+    <br><br>
+
+    <div id="app-list" class="app-list">
+    </div>
+    <center>
+      <br><br>
+      <button class="btn btn-danger text-center" id="loadMoreButton">Load More</button>
+    <br><br><br><br>
+</center>
+
+
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/assetsnew/js/script.js"></script>
+  <script src="/assetsnew/js/gms.js"></script>
+  <script src="https://kit.fontawesome.com/1237c86ba0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

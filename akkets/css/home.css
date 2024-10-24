@@ -1,0 +1,177 @@
+/* ----------------------------------------------------------------
+Home Page CSS
+---------------------------------------------------------------- */
+
+
+
+/* ________________________________________________________________
+Hero Tab Browser CSS
+________________________________________________________________ */
+
+.tab {
+    display: none;
+}
+
+.tab>img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: cover;
+    max-height: 60vh;
+    width: 100vw;
+}
+
+.tab.active {
+    display: block;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+}
+
+
+.browser {
+    background-color: #4d4d4d;
+    border: 0;
+    height: fit-content;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.browser-header {
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.browser-controls {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.browser-tab {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background-color: #1c1c1c;
+    border: none;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding-right: 100px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.browser-tab.active {
+    background-color: #4d4d4d !important;
+}
+
+.browser-content {
+    text-overflow: ellipsis;
+}
+
+.traffic-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.traffic-light.red {
+    background-color: #ff5f57;
+}
+
+.traffic-light.yellow {
+    background-color: #ffc130;
+}
+
+.traffic-light.green {
+    background-color: #26de81;
+}
+
+.url-bar {
+    color: #fff;
+    border: 0;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    padding: 5px;
+    height: 28px;
+    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.url-bar input {
+    color: #fff;
+    border: none;
+    padding: 0;
+    margin-top: -3px;
+    display: flex;
+    vertical-align: middle;
+    background-color: transparent;
+    outline: none;
+}
+
+.urllinebar {
+    padding-bottom: 10px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.browser-buttons-right {
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin-right: 10px;
+    padding-left: 5px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.browser-buttons-left {
+    color: #fff;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+.topfade {
+    height: 20vh;
+    width: 100vw;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(28, 28, 28, 1) 100%);
+    z-index: 2;
+    position: absolute;
+}
+
+.bottomfade {
+    height: 15vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    z-index: 3;
+    padding-bottom: 5vh;
+    position: relative;
+}
+
+/* End Hero Tab Browser CSS */
+
+/* ________________________________________________________________
+Hero Tab Browser CSS
+________________________________________________________________ */

@@ -1,0 +1,175 @@
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.modal-backdrop {
+    opacity: 0.5 !important;
+}
+
+#cosele {
+    background-color: #1C1C1C;
+    color: #fff;
+    float: left;
+    margin-left: 0;
+    border: 1px solid #fff;
+    transition: .4s;
+}
+
+#cosele:hover {
+    background-color: #fff;
+    color: #1C1C1C;
+    float: left;
+    border: 1px solid #1C1C1C;
+}
+
+#deleteverify {
+    width: 100%;
+    background-color: #1C1C1C;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    min-height: 40px;
+    color: #fff;
+}
+
+#deleteverify:focus {
+    width: 100%;
+    background-color: #1C1C1C;
+    outline: 4px solid #4A4A4A;
+    border-radius: 5px;
+    min-height: 40px;
+    color: #fff;
+}
+
+/* Define the border color for the focused state */
+.nice-input.focused {
+    border-color: red;
+}
+
+
+
+ /* Adjust styles as needed */
+ #sidebar {
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: transparent;
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 3rem;
+    padding-left: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 10px;
+
+}
+
+.sidebar-item:hover{
+    cursor: pointer;
+}
+.sidebar-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-item i{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* vertical-align: middle; */
+    font-size: 1.4rem !important;
+}
+
+/* Style for active sidebar item */
+.sidebar-item.active {
+/* background-color: red; */
+background: linear-gradient(to top right, rgb(115, 11, 14), rgb(10, 23, 87)) !important;
+}
+
+
+.sidebar-item a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-content {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 8rem;
+    left: 250px; /* Adjust according to sidebar width */
+    width: calc(100% - 250px); /* Adjust according to sidebar width */
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.menu-content.active {
+    display: block;
+}
+
+.tabCloakiconButtons{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.themeCloakiconButtons{
+    outline: 0;
+    border: 0;
+    background-color: transparent !important;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#themeCloakButtons>.active{
+    border-radius: 10px;
+    background: var(--secondary) !important;
+}
+
+#tabCloakButtons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#tabCloakButtons>.active{
+    border-radius: 10px;
+    background: var(--secondary) !important;
+}
+.customTabCloak{
+    color: #fff;
+}
+.modal-backdrop {
+z-index: -10000000000;
+display: none !important;
+}
+.modal-content{
+z-index: 100000;
+}
+
+

@@ -1,0 +1,555 @@
+/* 
+   The following CSS file contains custom theme variables for different themes used in a web application. 
+   Each theme is defined using the body[data-theme="theme-name"] selector, and within each theme, custom variables are defined to set the color scheme and font styles.
+
+   Example:
+   body[data-theme="theme-name"] {
+       --background: #color-code;
+       --secondary: #color-code;
+       --primary: #color-code;
+       --text: #color-code;
+       --textInverse: #color-code;
+       --font: font-name;
+   }
+*/
+
+/* 
+   The body[data-theme="default"] selector defines the default theme for the web application. 
+   It sets custom variables for background color, secondary color, primary color, text color, inverse text color, and font family.
+*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+body[data-theme="default"] {
+	--background: #1c1c1c;
+	--secondary: linear-gradient(to top right, rgb(115, 11, 14), rgb(10, 23, 87));
+	--primary: #fff;
+    --scroll: rgba(254, 25, 30,0.9);
+	--text: white;
+	--textInverse: white;
+	--font: var(--bs-body-font-family);
+}
+
+body[data-theme="default"]  .fixed-nav-bar-right>a {
+	color: var(--text) !important;
+	background: rgba(0, 0, 0, 0.2) !important;
+}
+
+body[data-theme="default"]  button {
+	color: var(--text) !important;
+	background-color: initial !important;
+}
+
+body[data-theme="winter"] {
+	--background: #d8dee9;
+	--secondary: #c2c7d1;
+	--primary: #004953;
+	--text: black;
+	--textInverse: black;
+	--font: Roboto;
+}
+
+body[data-theme="echo"] {
+	--background: #1c1c1c;
+	--secondary: #333333;
+	--primary: #4caf50;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="echo"] .fixed-nav-bar {
+	box-shadow: 0 5px 200px var(--primary);
+	margin-top: 0;
+}
+
+body[data-theme="lime"] {
+	--background: #0c1618;
+	--secondary: #002931;
+	--primary: #32CD32;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="space"] {
+	--background: #121212;
+	--secondary: #1a1a1a;
+	--primary: #662d91;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="molten"] {
+	--background: black;
+	--secondary: #211414;
+	--primary: #ff6868;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="eaglenet"] {
+	--background: linear-gradient(to right, #665fd2, #9824d3);
+	--secondary: #9b219b;
+	--primary: #4d004d;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="honey"] {
+	--background: #ffa15f;
+	--secondary: #f2883e;
+	--primary: black;
+	--text: black;
+	--textInverse: black;
+	--font: Roboto;
+}
+
+body[data-theme="swamp"] {
+	--background: #006072;
+	--secondary: #004755;
+	--primary: #15fc95;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="ruby"] {
+	--background: #0c1618;
+	--secondary: #002931;
+	--primary: #c01c73;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="squid"] {
+	--background: #0c1618;
+	--secondary: #002931;
+	--primary: #00b0f4;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="lemon"] {
+	--background: #0c1618;
+	--secondary: #002931;
+	--primary: #feeb01;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="connection"] {
+	--background: #1c1b29;
+	--secondary: #2e835c;
+	--primary: #99ffd0;
+	--text: #43b581;
+	--textInverse: #1c1b29;
+	--font: Roboto;
+}
+
+body[data-theme="dune"] {
+	--background: #d2c59d;
+	--secondary: #7d7259;
+	--primary: #282425;
+	--text: #282425;
+	--textInverse: #282425;
+	--font: Roboto;
+}
+
+body[data-theme="ice"] {
+	--background: #e8e8ea;
+	--secondary: #cacae2;
+	--primary: #005882;
+	--text: black;
+	--textInverse: black;
+	--font: Roboto;
+}
+
+body[data-theme="campfire"] {
+	--background: #333538;
+	--secondary: #232528;
+	--primary: #f17755;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="butter"] {
+	--background: #f7d5c5;
+	--secondary: #e79974;
+	--primary: #ff5200;
+	--text: black;
+	--textInverse: black;
+	--font: Roboto;
+}
+
+body[data-theme="box"] {
+	--background: #282828;
+	--secondary: #000000;
+	--primary: #fdf4c1;
+	--text: #fdf4c1;
+	--textInverse: #fdf4c1;
+	--font: Roboto;
+}
+
+body[data-theme="blackpink"] {
+	--background: black;
+	--secondary: #202020;
+	--primary: #f8708c;
+	--text: #f8708c;
+	--textInverse: #f8708c;
+	--font: Roboto;
+}
+
+body[data-theme="infinity"] {
+	--background: #030b11;
+	--secondary: #0f4a7a;
+	--primary: #008dff;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="fracital"] {
+	--background: #222;
+	--secondary: #333;
+	--primary: #f971e4;
+	--text: #f971e4;
+	--textInverse: #f971e4;
+	--font: Roboto;
+}
+
+body[data-theme="baja-blast"] {
+	--background: #3b8680;
+	--secondary: #225450;
+	--primary: #00d5c4;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="tsunami"] {
+	--background: #121212;
+	--secondary: #292929;
+	--primary: #2493ff;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="chrome"] {
+	--background: #3c3c3c;
+	--secondary: #2a2a2a;
+	--primary: #abc6ff;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="tiktok"] {
+	--background: #121212;
+	--secondary: #292929;
+	--primary: #ff3b5c;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="kahoot"] {
+	--background: #381272;
+	--secondary: #623d9a;
+	--primary: white;
+	--text: white;
+	--textInverse: white;
+	--font: Montserrat;
+}
+
+body[data-theme="nebelung"] {
+	--background: #dabc9a;
+	--secondary: #190f05;
+	--primary: #85684b;
+	--text: #190f05;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="simple"] {
+	--background: #18191c;
+	--secondary: #292b2f;
+	--primary: white;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="nord"] {
+	--background: #2E3440 /* nord0 */;
+	--secondary: #3B4252 /* nord1 */;
+	--primary: #81A1C1 /* nord9 */;
+	--text: #E5E9F0 /* nord5 */;
+	--textInverse: #E5E9F0 /* nord5 */;
+	--font: Roboto;
+}
+
+body[data-theme="nord-green"] {
+	--background: #2E3440 /* nord0 */;
+	--secondary: #3B4252 /* nord1 */;
+	--primary: #8FBCBB /* nord7 */;
+	--text: #E5E9F0 /* nord5 */;
+	--textInverse: #E5E9F0 /* nord5 */;
+	--font: Roboto;
+}
+
+body[data-theme="rose-pine"] {
+	--background: #191724 /* Base */;
+	--secondary: #26233a /* Overlay */;
+	--primary: #c4a7e7 /* Text */;
+	--text: #e0def4 /* Text */;
+	--textInverse: #e0def4  /* Iris */;
+	--font: Roboto;
+}
+
+body[data-theme="hub"] {
+	--background: black;
+	--secondary: #ff9000;
+	--primary: black;
+	--text: white;
+	--textInverse: black;
+	--font: Arial;
+}
+
+body[data-theme="hub"] .logo {
+	--primary: var(--secondary);
+}
+
+body[data-theme="hub"] #switchableidktheisis{
+	background-color: var(--secondary);
+	border-radius: 5px;
+	font-family: var(--font) !important;
+	/* padding: 0 !important; */
+}
+body[data-theme="hub"] p, h1:not(.title), h2, h3, h4, h5, h6, a, button, b, select, textarea, i{
+	color: var(--text) !important;
+}
+
+body[data-theme="hub"] .button:not(.activeButton) {
+	--primary: var(--secondary);
+}
+
+
+body[data-theme="hub"] .settingsButton:not(.settingsButtonActive) {
+	--primary: var(--secondary);
+}
+
+body[data-theme="hacker"] {
+	--background: #090909;
+	--secondary: #232323;
+	--primary: #7de38d;
+	--text: #7de38d;
+	--textInverse: #7de38d;
+	--font: JetBrains Mono;
+}
+
+body[data-theme="hacker"] .title {
+	font-family: JetBrains Mono;
+}
+
+body[data-theme="cobalt"] {
+	--background: #030303;
+	--secondary: #09283e;
+	--primary: #0095ff;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="catppuccin-mocha"] {
+	--background: #1e1e2e /* Base */;
+	--secondary: #313244 /* Surface0 */;
+	--primary: #89b4fa /* Blue */;
+	--text: #cdd6f4 /* Text */;
+	--textInverse: #cdd6f4 /* Text */;
+	--font: Roboto;
+}
+
+body[data-theme="catppuccin-macchiato"] {
+	--background: #24273a /* Base */;
+	--secondary: #363a4f /* Surface0 */;
+	--primary: #8aadf4 /* Blue */;
+	--text: #cad3f5 /* Text */;
+	--textInverse: #cad3f5 /* Text */;
+	--font: Roboto;
+}
+
+body[data-theme="catppuccin-frappe"] {
+	--background: #303446 /* Base */;
+	--secondary: #414559 /* Surface0 */;
+	--primary: #8caaee /* Blue */;
+	--text: #c6d0f5 /* Text */;
+	--textInverse: #c6d0f5 /* Text */;
+	--font: Roboto;
+}
+
+body[data-theme="catppuccin-latte"] {
+	--background: #eff1f5 /* Base */;
+	--secondary: #ccd0da /* Surface0 */;
+	--primary: #1e66f5 /* Blue */;
+	--text: #4c4f69 /* Text */;
+	--textInverse: #4c4f69 /* Text */;
+	--font: Roboto;
+}
+
+body[data-theme="hg"] {
+	--background: #0b0f3d;
+	--secondary: #3d4065;
+	--primary: white;
+	--text: white;
+	--textInverse: white;
+	--font: Space Grotesk;
+}
+
+body[data-theme="hg"] .logo svg {
+	filter: drop-shadow(0 0 15px var(--primary));
+}
+
+body[data-theme="ludicrous"] {
+	--background: #091b2c;
+	--secondary: #114067;
+	--primary: white;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="discord"] {
+	--background: #313338;
+	--secondary: #2B2D31;
+	--primary: #5865F2;
+	--text: white;
+	--textInverse: white;
+	--font: Open Sans;
+}
+
+body[data-theme="flow"] {
+	--background: #11111b;
+	--secondary: #1e1e2e;
+	--primary: #89B4FA;
+	--text: #cdd6f4;
+	--textInverse: #cdd6f4;
+	--font: monospace;
+}
+
+body[data-theme="flow"]  {
+	font-size: 16px;
+}
+
+body[data-theme="bubblegum"] {
+	--background: #EE6176;
+	--secondary: #F58092;
+	--primary: #ffc1cc;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="noctura"] {
+	--background: black;
+	--secondary: #242424;
+	--primary: white;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="noctura"] .title {
+	font-family: Major Mono Display;
+}
+
+body[data-theme="vscode"] {
+	--background: #1f1f1f;
+	--secondary: #181818;
+	--primary: #0078d4;
+	--text: #CCC;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="pride"] {
+	--background: linear-gradient(180deg, #FE0000 16.66%, #FD8C00 16.66%, 33.32%, #FFE500 33.32%, 49.98%, #119F0B 49.98%, 66.64%, #0644B3 66.64%, 83.3%, #C22EDC 83.3%), #000000c4;
+	--secondary: white;
+	--primary: black;
+	--text: black;
+	--textInverse: black;
+	--font: Roboto;
+}
+
+body[data-theme="pride"]  {
+	background-attachment: fixed;
+}
+
+body[data-theme="immortal"] {
+	--background: linear-gradient(120deg, rgba(01,06,15,1) 21%, rgba(01,21,49,1) 97%);
+	--secondary: #1E293B;
+	--primary: #155E75;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="deepsea"] {
+	--background: #0a244a;
+	--secondary: #051730;
+	--primary: white;
+	--text: white;
+	--textInverse: white;
+	--font: Roboto;
+}
+
+body[data-theme="astro"] {
+	--background: #2B1C3D;
+	--secondary: #351E4F;
+	--primary: purple;
+	--text: white;
+	--textInverse: #D88FD8;
+	--font: Roboto;
+}
+
+body[data-theme="greatsword"] {
+	--background: #141414;
+	--secondary: #222222;
+	--primary: #636363;
+	--text: #A9A9A9;
+	--textInverse: #636363;
+	--font: Roboto;
+}
+
+body[data-theme="topographic"] {
+	--background: url('/assetsnew/img/topo.jpeg');
+	--secondary: #222222;
+	--primary: #fff;
+	--text: #fff;
+	--textInverse: #636363;
+	--font: monospace;
+}
+body[data-theme="dirt"] {
+	--background: url('/assets/img/dirt.webp');
+	--secondary: #222222;
+	--primary: #fff;
+	--text: #fff;
+	--textInverse: #636363;
+	--font: mine;
+}
+body[data-theme="thelightmode"] {
+	--background: #fff;
+	--secondary: #fff;
+	--primary: #fff;
+	--text: #fff;
+	--textInverse: #fff;
+	--font: #fff;
+}
+
+

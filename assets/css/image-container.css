@@ -1,0 +1,27 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18%;
+    height: 175px;
+    width: 175px;
+    margin-bottom: 10px;
+    border-radius: 18%; 
+    margin: 0 auto;
+    object-fit: cover;
+    
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.game-card:hover .image-container img {
+    transform: scale(1.2);
+}
+
+.game-card:hover .image-container .cosmic-city img {
+    transform: scale(1.2) rotate(9deg);
+}

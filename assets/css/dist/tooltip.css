@@ -1,0 +1,87 @@
+/*by https://codepen.io/marcwiethe/pen/JprZvJ modified a bit by nate-games*/
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .tooltip {
+    display: inline-flex;
+  }
+  /* original opacity was 1 now its 0.8*/
+  
+  .tooltip-link {
+    position: relative;
+    padding: 0; /*padding: 12px 24px;*/
+    transition: all 0.3s ease;
+    text-decoration: none;
+    &:before {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      left: 50%;
+      top: 12px; /* Fix padding */
+      transform: translate3d(-50%, 0%, 0);
+      transition: all 0.3s ease;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: #282828 transparent transparent transparent;
+    }
+    &:after {
+      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.6));
+      text-transform: none;
+      content: attr(data-tooltip);
+      font-size: 12px;
+      position: absolute;
+      color: #fff;
+      background: #282828;
+      padding: 8px 12px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      max-width: 200px;
+      opacity: 0;
+      pointer-events: none;
+      left: 50%;
+      top: 0;
+      border-radius: 4px;
+      transform: translate3d(-50%, 0%, 0);
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      &:before,
+      &:after {
+        opacity: 0.9;
+      }
+      &:before {
+        transform: translate3d(-50%, calc(-100% - 18px), 0);
+      }
+      &:after {
+        transform: translate3d(-50%, calc(-100% - 16px), 0);
+      }
+    }
+  }
+  
+  /* Version 2*/
+  abbr[data-title] {
+    position: relative;
+    text-decoration: underline dotted;
+  }
+  abbr[data-title]:hover::after,
+  abbr[data-title]:focus::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    width: auto;
+    white-space: nowrap;
+    background: #ff0060;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    padding: 3px 5px;
+  }

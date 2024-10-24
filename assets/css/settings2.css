@@ -1,0 +1,51 @@
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.modal-backdrop {
+    opacity: 0.5 !important;
+}
+
+#cosele {
+    background-color: #1C1C1C;
+    color: #fff;
+    float: left;
+    margin-left: 0;
+    border: 1px solid #fff;
+    transition: .4s;
+}
+
+#cosele:hover {
+    background-color: #fff;
+    color: #1C1C1C;
+    float: left;
+    border: 1px solid #1C1C1C;
+}
+
+#deleteverify {
+    width: 100%;
+    background-color: #1C1C1C;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    min-height: 40px;
+    color: #fff;
+}
+
+#deleteverify:focus {
+    width: 100%;
+    background-color: #1C1C1C;
+    outline: 4px solid #4A4A4A;
+    border-radius: 5px;
+    min-height: 40px;
+    color: #fff;
+}
+
+/* Define the border color for the focused state */
+.nice-input.focused {
+    border-color: red;
+}

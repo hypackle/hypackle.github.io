@@ -1,0 +1,35 @@
+.header {
+    background-color: #0f0f0f;
+    /* Updated header background color to a shade in between #222 and #111 */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 100px;
+}
+
+.menu-item:hover {
+    background-color: #000;
+    color: #fff;
+}

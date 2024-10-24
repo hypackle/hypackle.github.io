@@ -1,0 +1,153 @@
+#tos-overlay p {
+  text-align: left;
+  font-size: 13px;
+}
+
+#tos-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+#tos-box {
+  background-color: #222;
+  padding: 20px;
+  width: 350px;
+  height: 550px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.bn5 {
+  padding: 7px 31px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-family: Arial;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/*
+     FILE ARCHIVED ON 02:13:31 Sep 10, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:02:45 Mar 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.059
+  cdx.remote: 0.122
+  esindex: 0.013
+  LoadShardBlock: 146.928 (6)
+  PetaboxLoader3.datanode: 144.679 (7)
+  load_resource: 2272.471
+  PetaboxLoader3.resolve: 2233.14
+*/
+
+
+#autocomplete-container {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 25%;
+  background-color: rgba(30, 30, 30, 0.8);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: left;
+  position: absolute;
+  /* or fixed */
+  margin: 10px auto;
+  /* Center horizontally */
+  font-size: 24px;
+  outline: none;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  display: block;
+  z-index: 999;
+  /* Ensure it appears above other content */
+  left: 0;
+  /* Adjust as needed */
+  right: 0;
+  /* Adjust as needed */
+}
