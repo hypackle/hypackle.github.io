@@ -60,7 +60,7 @@ function createDropdown() {
     dropdownContainer.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
 
     const select = document.createElement('select');
-    select.id = 'site-selector';
+    select.id = 'site-selector'; 
 
     // Populate dropdown options
     options.forEach(option => {
