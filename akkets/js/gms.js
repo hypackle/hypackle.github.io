@@ -70,11 +70,10 @@ function displayCards(data, reset = false) {
 	data.sort((a, b) => {
 		if (a.broken && !b.broken) {
 			return 1; // Move broken games to the bottom
-		} else if (!a.broken && b.broken) {
+		} if (!a.broken && b.broken) {
 			return -1; // Move non-broken games to the top
-		} else {
-			return 0; // Maintain the order for games with the same broken status
 		}
+			return 0; // Maintain the order for games with the same broken status
 	});
 
 	// Display cards based on startIndex and cardsPerLoad
@@ -212,7 +211,7 @@ document.addEventListener("click", (event) => {
 		if (JustOpenUrl === "true") {
 			window.location.href = gameUrl;
 		} else {
-			window.location.href = "/gameplayer/index.html?" + gameName;
+			window.location.href = `/play/index.html?${gameName}`;
 		}
 	}
 });
@@ -307,21 +306,18 @@ document.addEventListener("DOMContentLoaded", () => {
 				.then((data) => {
 					gamesContainerSingleRow.innerHTML = ""; // Clear previous content
 
+					// biome-ignore lint/complexity/noForEach: im too lazy to fix
 					recentPlaysData.forEach((play) => {
 						const matchedGame = data.find((game) => game.name === play);
 						if (matchedGame) {
 							const playItem = createGameItem(matchedGame);
-							playItem.addEventListener("click", function () {
+							playItem.addEventListener("click", () => {
 								logGameClick(matchedGame.name);
 								window.location.href =
-									"/gameplayer/index.html?" + matchedGame.name;
+									`/play/index.html?${matchedGame.name}`;
 							});
 							gamesContainerSingleRow.appendChild(playItem);
 						}
-						// const gameItem = createGameItem(game);
-						// // Add event listener to redirect to game.url
-						// gameItem.addEventListener('click', function() {
-						//     window.location.href = game.url;
 					});
 					// Function to retrieve the first item from localStorage, match it with a game object, and access its imgSrc property
 					function matchFirstItemAndAccessImgSrc() {
@@ -356,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
 											document.getElementById(
 												"particles-js",
 											).style.backgroundImage =
-												"url(" + matchedGame.imageSrc + ")";
+												`url(${matchedGame.imageSrc})`;
 											if (localStorage.getItem("likesscreen") == "true") {
 												// .style.backgroundColor = "rgba(0,0,0,0.8)";
 											}
@@ -409,11 +405,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.getElementById("recentplaystext").style.display = "none";
 			document.getElementById("ClearRecentPlays").style.display = "none";
 			// document.getElementById("polli").style.display = "none";
-			document.addEventListener("DOMContentLoaded", () => {
-				const scripttt = document.createElement("script");
-				scripttt.src = "/assets/js/selectwithoutselect.js";
-				document.head.appendChild(scripttt);
-			});
 		}
 	}
 
@@ -435,7 +426,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			let words = inputString.split(" ");
 
 			// Remove each word in wordsToRemove from the array of words
-			for (let word of wordsToRemove) {
+			for (const word of wordsToRemove) {
 				words = words.filter((w) => w !== word);
 			}
 
@@ -444,8 +435,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 
 		// Example usage:
-		const inputString =
-			"NEW new a [Updated] [updated] [UPDATED] [Needs Internet] [Method 2] 'remove' and 'example' that we want to remove.";
 		const wordsToRemove = [
 			"NEW",
 			"new",
@@ -490,7 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		// if (game.tags) {
 		//     overlayContent += `<p class="text-sm">${game.tags}</p>`;
 		// }
-		overlayContent += `</div>`;
+		overlayContent += "</div>";
 		overlay.innerHTML = overlayContent;
 
 		gameItem.appendChild(image);
@@ -501,13 +490,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
-
 // ________________________________________________________________
 // Clear the recent plays
 // ________________________________________________________________
 
 function confirmClearRecentPlays() {
-	let optionOfRecentPlays = prompt(
+	const optionOfRecentPlays = prompt(
 		"Are you sure you want to clear your recent plays?",
 		"Type 'Yes' to confirm",
 	);
@@ -515,10 +503,10 @@ function confirmClearRecentPlays() {
 	if (optionOfRecentPlays == null || optionOfRecentPlays == "") {
 		alert("You pressed Cancel. Not doing anything.");
 	} else if (
-		optionOfRecentPlays == "Yes" ||
-		optionOfRecentPlays == "yes" ||
-		optionOfRecentPlays == "y" ||
-		optionOfRecentPlays == "Y"
+		optionOfRecentPlays === "Yes" ||
+		optionOfRecentPlays === "yes" ||
+		optionOfRecentPlays === "y" ||
+		optionOfRecentPlays === "Y"
 	) {
 		localStorage.removeItem("recentPlays");
 		alert("Your recent plays have been cleared.");
