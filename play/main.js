@@ -39,7 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         setTimeout(() => {
                             const loadingIframe = document.getElementById('loading-area');
                             const overlayIframe = document.getElementById('overlay-area');
+                            const fullscreenBtn = document.getElementById('fullscreen-btn');
                             if (loadingIframe) {
+                                fullscreenBtn.onclick = () => open_fullscreen();
+                                fullscreenBtn.classList.remove('fullscreen-btn-disabled');
                                 overlayIframe.remove();
                                 loadingIframe.style.display = 'none'; // Hide loading iframe
                             }

@@ -59,3 +59,21 @@ body {
     left: 0;
     z-index: 9999999999999; /* Higher z-index for overlay iframe */
 }
+
+
+.fullscreen-btn{
+    color: #fff !important;
+}
+.fullscreen-btn:hover{
+    /* color: #e3e3e3 !important; */
+    border-radius: 5px !important;
+    border: 1px solid #fff !important;
+}
+
+.fullscreen-btn-disabled{
+    color: #525252 !important;
+}
+.fullscreen-btn-disabled:hover{
+    color: #525252 !important;
+    border: 0 !important;
+}
