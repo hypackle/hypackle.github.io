@@ -38,7 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         // Remove loading iframe after 3 seconds
                         setTimeout(() => {
                             const loadingIframe = document.getElementById('loading-area');
+                            const overlayIframe = document.getElementById('overlay-area');
                             if (loadingIframe) {
+                                overlayIframe.remove();
                                 loadingIframe.style.display = 'none'; // Hide loading iframe
                             }
                         }, 3000); // 3000 milliseconds = 3 seconds
