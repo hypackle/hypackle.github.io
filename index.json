@@ -8,5 +8,10 @@
 		"url": "/files/drive-mad/index.html",
 		"imageSrc": "/files/drive-mad/webapp/logo.avif",
 		"name": "Drive Mad"
+	  },
+	  {
+		"url": "/files/tag/index.html",
+		"imageSrc": "/files/tag/splash.avif",
+		"name": "Tag"
 	  }
 ]
