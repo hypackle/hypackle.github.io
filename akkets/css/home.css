@@ -65,7 +65,8 @@ ________________________________________________________________ */
     border: none;
     color: #fff;
     border-radius: 10px 10px 0 0;
-    padding-right: 100px;
+    padding-left: 10px;
+    padding-right: 60px;
     cursor: pointer;
     padding-bottom: 5px;
     transition: background-color 0.3s;
@@ -78,6 +79,21 @@ ________________________________________________________________ */
 
 .browser-content {
     text-overflow: ellipsis;
+}
+
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .traffic-light {
@@ -170,8 +186,43 @@ ________________________________________________________________ */
     position: relative;
 }
 
+
+.iframes-tabs {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+}
+
+.yt-cover {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    float: right;
+    width: 100%;
+    min-height: 20%;
+    z-index: 1000;
+}
+
+
 /* End Hero Tab Browser CSS */
 
+.messageOfDayDontRead {
+    color: gray;
+    font-size: 9px;
+    margin-bottom: 0;
+}
+
+#video1aloopeaear, #video2aloopeaear {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+
 /* ________________________________________________________________
-Hero Tab Browser CSS
+Put more stuff
 ________________________________________________________________ */

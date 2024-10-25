@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #1c1c1c !important;
+}
+
+a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(254, 25, 30, 0.9);
+    border: 4px solid transparent;
+    background-clip: content-box;
+    border-radius: 8px
+}
