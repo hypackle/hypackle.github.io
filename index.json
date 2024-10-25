@@ -13,5 +13,20 @@
 		"url": "/files/tag/index.html",
 		"imageSrc": "/files/tag/splash.avif",
 		"name": "Tag"
+	  },
+	  {
+		"url": "/files/adcap/index.html",
+		"imageSrc": "/files/adcap/splash.jpg",
+		"name": "Adcap"
+	  },
+	  {
+		"url": "/files/polytrack/index.html",
+		"imageSrc": "/files/polytrack/splash.png",
+		"name": "PolyTrack"
+	  },
+	  {
+		"url": "/files/ragdoll-archers/index.html",
+		"imageSrc": "/files/ragdoll-archers/logo.jpeg",
+		"name": "Ragdoll Archers"
 	  }
 ]

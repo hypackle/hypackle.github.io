@@ -71,6 +71,7 @@ body {
   min-height: 210px;
   background-color: rgba(255, 255, 255, 0.108);
   width: auto;
+  max-width: 300px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
   transition: 0.7s;
 }
@@ -147,7 +148,7 @@ body {
 
 .gms-title {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
