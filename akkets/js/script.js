@@ -77,19 +77,16 @@ function createDropdown() {
         const savedOption = options.find(option => option.icon === savedSite);
         if (savedOption) {
             select.value = savedOption.icon;
+            // Set the document title and favicon immediately
+            updateFaviconAndTitle(savedOption);
         }
     }
 
-    select.onchange = function () {
+    select.onchange = () => {
         const selectedOption = options.find(option => option.icon === select.value);
         if (selectedOption) {
             // Update the document title and favicon
-            document.title = selectedOption.title;
-            const link = document.querySelector('link[rel="icon"]') || document.createElement('link');
-            link.rel = 'icon';
-            link.href = selectedOption.icon;
-            document.head.appendChild(link);
-
+            updateFaviconAndTitle(selectedOption);
             // Save selection to local storage
             localStorage.setItem('selectedSite', selectedOption.icon);
         }
@@ -97,6 +94,17 @@ function createDropdown() {
 
     dropdownContainer.appendChild(select);
     document.body.appendChild(dropdownContainer);
+}
+
+// Function to update the favicon and title
+function updateFaviconAndTitle(selectedOption) {
+    // Update the document title
+    document.title = selectedOption.title;
+    // Update the favicon
+    const link = document.querySelector('link[rel="icon"]') || document.createElement('link');
+    link.rel = 'icon';
+    link.href = selectedOption.icon;
+    document.head.appendChild(link);
 }
 
 // Run the function to create the dropdown
