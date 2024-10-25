@@ -44,3 +44,18 @@ body {
     position: relative;
     z-index: 1 !important;
 }
+
+
+
+
+.loading-iframe {
+    position: absolute; /* Position the loading iframe on top */
+    z-index: 999999999999; /* High z-index for loading iframe */
+}
+
+.overlay-iframe {
+    position: absolute; /* Position another iframe on top if needed */
+    top: 0;
+    left: 0;
+    z-index: 9999999999999; /* Higher z-index for overlay iframe */
+}
