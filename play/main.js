@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                           const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
   
                           // Delay hiding the loading page for 3 seconds
-                          await delay(600);
+                          await delay(4000);
   
                           const originalUrl = matchingGame.url;
                           const replacedUrl = originalUrl.includes("index.html") ? originalUrl.replace("index.html", "") : originalUrl;
