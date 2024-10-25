@@ -2,7 +2,61 @@
     {
 		"url": "/files/slope/game.html",
 		"imageSrc": "/files/slope/splash.png",
-		"name": "Slope",
-		"tags": "popular"
-	}
+		"name": "Slope"
+	},
+	{
+		"url": "/files/drive-mad/index.html",
+		"imageSrc": "/files/drive-mad/webapp/logo.avif",
+		"name": "Drive Mad"
+	  },
+	  {
+		"url": "/files/tag/index.html",
+		"imageSrc": "/files/tag/splash.avif",
+		"name": "Tag"
+	  },
+	  {
+		"url": "/files/adcap/index.html",
+		"imageSrc": "/files/adcap/splash.jpg",
+		"name": "Adcap"
+	  },
+	  {
+		"url": "/files/polytrack/index.html",
+		"imageSrc": "/files/polytrack/splash.png",
+		"name": "PolyTrack"
+	  },
+	  {
+		"url": "/files/ragdoll-archers/index.html",
+		"imageSrc": "/files/ragdoll-archers/logo.jpeg",
+		"name": "Ragdoll Archers"
+	  },
+	  {
+		"url": "/files/basketrandom/index.html",
+		"imageSrc": "/files/basketrandom/splash.jpeg",
+		"name": "Basket Random"
+	  },
+	  {
+		"url": "/files/2048/index.html",
+		"imageSrc": "/files/2048/2048.png",
+		"name": "2048"
+	  },
+	  {
+		"url": "/files/1v1lol/index.html",
+		"imageSrc": "/files/1v1lol/splash.png",
+		"name": "1v1.lol"
+	  },
+	  {
+		"url": "/files/rocket-league/index.html",
+		"imageSrc": "/files/rocket-league/splash.jpeg",
+		"name": "Rocket League Unity"
+	  },
+	  {
+		"url": "/files/shellshock/index.html",
+		"imageSrc": "/files/shellshock/splash.webp",
+		"name": "SS (BETA)"
+	  },
+	  {
+		"url": "/files/skidibi/index.html",
+		"imageSrc": "/files/skidibi/splash.avif",
+		"name": "You vs 100 Skibidi Toilets"
+	  }
 ]

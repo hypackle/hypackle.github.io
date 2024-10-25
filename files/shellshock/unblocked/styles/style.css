@@ -1,0 +1,31 @@
+.logo img {
+	max-width: 25em;
+	display: block;
+	margin: 1em auto 2em;
+}
+
+body {
+	height: auto;
+    -webkit-touch-callout: auto;
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+	padding-bottom: 2em;
+}
+
+.content-width {
+	max-width: 50em;
+	padding: 0 1em;
+}
+
+a.link-proxy {
+	color: var(--ss-blue5);
+    font-size: 1.4em;
+	font-weight: 600;
+}
+
+a:hover {
+	color: var(--ss-blue3);
+}

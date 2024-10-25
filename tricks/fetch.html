@@ -1,0 +1,26 @@
+<!-- use this if they try to block you from fetching data -->
+async function fetchHTML() {
+    try {
+        const response = await fetch("https://shellshockersio.game-files.crazygames.com/shellshockersio/110/index.html");
+
+        // Check if the response is okay (status code in the range 200-299)
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const htmlContent = await response.text(); // Get the response text
+        return htmlContent; // Return the HTML content
+    } catch (error) {
+        console.error("Error fetching HTML:", error);
+        return null; // Return null or handle the error as needed
+    }
+}
+
+// Example usage
+fetchHTML().then(html => {
+    if (html) {
+        console.log(html); // Log the fetched HTML content
+    } else {
+        console.log("Failed to fetch HTML content.");
+    }
+});

@@ -68,9 +68,10 @@ body {
   flex-direction: column;
   border-radius: 10px;
   padding: 10px;
-  min-height: 300px;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 300px;
+  min-height: 210px;
+  background-color: rgba(255, 255, 255, 0.108);
+  width: auto;
+  max-width: 300px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
   transition: 0.7s;
 }
@@ -102,23 +103,23 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-  transition: 0.7s !important;
+  transition: 0.3s !important;
   text-align: center;
   height: 150px;
   width: 270px;
-  border-radius: 15px !important;
+  border-radius: 3px !important;
 }
 
-.app-image:hover {
-  border-radius: 5px !important;
+.app-card:hover .app-image {
+  box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.477);
 }
-
 
 .app-card:hover {
   background-size: 400% 400%;
   background: linear-gradient(to top right, rgb(115, 11, 14), rgb(10, 23, 87)) !important;
   animation: gradient 5s ease infinite;
 }
+
 
 @keyframes gradient {
   0% {
@@ -147,7 +148,7 @@ body {
 
 .gms-title {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
