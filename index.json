@@ -2,7 +2,11 @@
     {
 		"url": "/files/slope/game.html",
 		"imageSrc": "/files/slope/splash.png",
-		"name": "Slope",
-		"tags": "popular"
-	}
+		"name": "Slope"
+	},
+	{
+		"url": "/files/drive-mad/index.html",
+		"imageSrc": "/files/drive-mad/webapp/logo.avif",
+		"name": "Drive Mad"
+	  }
 ]
