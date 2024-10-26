@@ -28,5 +28,20 @@
 		"url": "/files/ragdoll-archers/index.html",
 		"imageSrc": "/files/ragdoll-archers/logo.jpeg",
 		"name": "Ragdoll Archers"
+	  },
+	  {
+		"url": "/files/basketrandom/index.html",
+		"imageSrc": "/files/basketrandom/splash.jpeg",
+		"name": "Basket Random"
+	  },
+	  {
+		"url": "/files/1v1lol/index.html",
+		"imageSrc": "/files/1v1lol/splash.png",
+		"name": "1v1.lol"
+	  },
+	  {
+		"url": "/files/shellshock/index.html",
+		"imageSrc": "/files/shellshock/splash.webp",
+		"name": "SS (BETA)"
 	  }
 ]

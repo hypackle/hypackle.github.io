@@ -51,8 +51,9 @@ const options = [
 function createDropdown() {
     const dropdownContainer = document.createElement('div');
     dropdownContainer.style.position = 'fixed';
+    // dropdownContainer.style.width = '10px';
     dropdownContainer.style.bottom = '20px';
-    dropdownContainer.style.left = '20px';
+    dropdownContainer.style.right = '20px';
     dropdownContainer.style.zIndex = '999999999999999999999999999999999999999999999999999';
     dropdownContainer.style.backgroundColor = '#fff';
     dropdownContainer.style.padding = '10px';
