@@ -3,7 +3,7 @@
 Welcome to Hypackel Lite! I've received several requests to bring Hypackel back online. Since AWS is expensive, I'm switching to GitHub Pages. However, there's a 3GB limit, so I won't be able to include as many games for now. Game requests are currently closed but will reopen later.
 
 <a href="https://discord.gg/xjMnZn3R5f">
-  <p style="text-align:center;">
+  <p align="center" style="text-align:center;">
     <img src="https://invidget.switchblade.xyz/eHqQ84MEkD?theme=dark" alt="discord">
   </p>
 </a>
