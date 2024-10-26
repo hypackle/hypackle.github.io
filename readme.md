@@ -24,14 +24,6 @@ Thank you to all of these amazing people for helping work on this project!
 
 ![Contrib](https://contrib.rocks/image?repo=hypackellite/hypackellite.github.io#)
 
-And the people who worked on v2!
-
-![Contrib](https://contrib.rocks/image?repo=hypackellite/hypackellite.github.ioo#)
-
-And the people who worked on v1!
-
-![Contrib](https://contrib.rocks/image?repo=hypackellite/hypackellite.github.io#)
-
 ## Deployment
 
 You can deploy your own copy of Hypackel Lite by following these:
