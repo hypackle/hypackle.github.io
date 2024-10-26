@@ -1,6 +1,6 @@
 // Data for dropdown options
 const options = [
-    { name: "Default", icon: "/favicon.ico", title: "Home | Hypackel" },
+    { name: "Default", icon: "/app.png", title: "Home | Hypackel" },
     { name: "Google", icon: "/favicon/google.png", title: "Google" },
     { name: "Drive", icon: "/favicon/drive.png", title: "My Drive - Google Drive" },
     { name: "Classroom", icon: "/favicon/classroom.png", title: "Home" },

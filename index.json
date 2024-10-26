@@ -40,8 +40,18 @@
 		"name": "1v1.lol"
 	  },
 	  {
+		"url": "/files/rocket-league/index.html",
+		"imageSrc": "/files/rocket-league/splash.jpeg",
+		"name": "Rocket League Unity"
+	  },
+	  {
 		"url": "/files/shellshock/index.html",
 		"imageSrc": "/files/shellshock/splash.webp",
 		"name": "SS (BETA)"
+	  },
+	  {
+		"url": "/files/skidibi/index.html",
+		"imageSrc": "/files/skidibi/splash.avif",
+		"name": "You vs 100 Skibidi Toilets"
 	  }
 ]
