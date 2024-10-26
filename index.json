@@ -35,6 +35,11 @@
 		"name": "Couch 2048 (Physics)"
 	  },
 	  {
+		"url": "/files/slow-roads/index.html",
+		"imageSrc": "/files/slow-roads/splash.jpeg",
+		"name": "Slow Roads.io"
+	  },
+	  {
 		"url": "/files/basketrandom/index.html",
 		"imageSrc": "/files/basketrandom/splash.jpeg",
 		"name": "Basket Random"
@@ -58,6 +63,12 @@
 		"url": "/files/shellshock/index.html",
 		"imageSrc": "/files/shellshock/splash.webp",
 		"name": "SS (BETA)"
+	  },
+	  {
+		"url": "/files/hypercars/index.html",
+		"imageSrc": "/files/hypercars/splash.png",
+		"name": "Hyper Cars: Ramp Crash",
+		"tags": "car, 2 player, driving, racing"
 	  },
 	  {
 		"url": "/files/skidibi/index.html",
