@@ -2,7 +2,7 @@
 
 Welcome to Hypackel Lite! I've received several requests to bring Hypackel back online. Since AWS is expensive, I'm switching to GitHub Pages. However, there's a 3GB limit, so I won't be able to include as many games for now. Game requests are currently closed but will reopen later.
 
-<p align="center"><img src="https://invidget.switchblade.xyz/eHqQ84MEkD?theme=dark)](https://discord.gg/eHqQ84MEkD" alt="discord"></img></p>
+<a href="https://discord.gg/xjMnZn3R5f"><p align="center"><img src="https://invidget.switchblade.xyz/eHqQ84MEkD?theme=dark)](https://discord.gg/eHqQ84MEkD" alt="discord"></img></p></a>
 
 > **Note**
 > **If you do fork this repo, please give the orginal repo a star! It helps out a lot and only 30% of people who fork give me a star.**
