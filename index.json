@@ -30,6 +30,11 @@
 		"name": "Ragdoll Archers"
 	  },
 	  {
+		"url": "/files/couch2048/game/index.html",
+		"imageSrc": "/files/couch2048/game/splash.jpg",
+		"name": "Couch 2048 (Physics)"
+	  },
+	  {
 		"url": "/files/basketrandom/index.html",
 		"imageSrc": "/files/basketrandom/splash.jpeg",
 		"name": "Basket Random"
